@@ -1,0 +1,7 @@
+Import('env')
+core='''lsviewer.cpp window.cpp'''.split()
+headers=Glob("*.h")
+
+qrccc = env.Qrc4('lsviewer')
+viewer = env.ViewerInstall('lsviewer2d',core+qrccc,headers, LIBS=['GL','GLU','QtGui','QtCore','QtOpenGL','viewer','meshviewer2d'])
+env.Depends(viewer, Glob('*.glsl'))

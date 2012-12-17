@@ -1,0 +1,4 @@
+import os
+env = Environment(CPPPATH=[os.environ['EIGEN_PATH'],'/home/mtao/.local/include'])
+test =env.Program('sphereTest','sphere_test.cpp', LIBS=[], LIBPATH='/home/mtao/.local/lib')
+AlwaysBuild(test)

@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/mac">
+        <file>shader.v.glsl</file>
+        <file>shader.f.glsl</file>
+        <file>shader.g.glsl</file>
+        <file>particle.f.glsl</file>
+        <file>particle.v.glsl</file>
+        <file>velocity.f.glsl</file>
+        <file>velocity.v.glsl</file>
+        <file>velocity.g.glsl</file>
+        <file>particle.g.glsl</file>
+        <file>particle.130.v.glsl</file>
+        <file>particle.130.f.glsl</file>
+    </qresource>
+</RCC>

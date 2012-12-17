@@ -1,0 +1,15 @@
+Import('env')
+dirs='''
+linear
+cholesky
+quadratic
+'''.split()
+meh='''
+testing
+'''.split()
+headers = Glob("*.h") + Glob("*.hpp")
+env.IncludeInstall(headers)
+
+
+
+SConscript(dirs=dirs)

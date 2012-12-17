@@ -1,0 +1,7 @@
+Import('env')
+core='''lineviewer.cpp window.cpp'''.split()
+headers=Glob("*.h")
+qrccc = env.Qrc4('resource')
+
+viewer = env.ViewerInstall('lineviewer',core+qrccc,headers, LIBS=['GL','GLU','QtGui','QtCore','QtOpenGL','viewer','meshviewer'])
+env.Depends(viewer, Glob('*.glsl'))

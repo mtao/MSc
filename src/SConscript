@@ -1,0 +1,13 @@
+#subdirs of this root
+dirs='''
+geometry
+viewer
+notes
+sandbox
+simulation
+solvers
+'''.split()
+tofix='''
+'''.split()
+
+SConscript(dirs=dirs)

@@ -1,0 +1,5 @@
+Import("env")
+
+
+
+env.Program('jacobi_test','main.cpp')

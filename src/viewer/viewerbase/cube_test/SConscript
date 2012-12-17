@@ -1,0 +1,5 @@
+Import('env')
+test =env.Program('compileTest',['main.cpp','cube.cpp','resource.qrc'],LIBPATH='/home/mtao/.local/lib', LIBS=['GL','QtGui','QtCore','QtOpenGL','viewer'])
+env.Depends(test,Glob('*.glsl'))
+
+AlwaysBuild(test)

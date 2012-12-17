@@ -1,0 +1,7 @@
+Import('env')
+core='''textureviewer.cpp window.cpp'''.split()
+headers=Glob("*.h")
+qrccc = env.Qrc4('textureviewer')
+
+viewer = env.ViewerInstall('textureviewer',core+qrccc,headers, LIBS=['GL','GLU','QtGui','QtCore','QtOpenGL','viewer','GLEW'])
+env.Depends(viewer, Glob('*.glsl'))

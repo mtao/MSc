@@ -1,0 +1,13 @@
+Import('env')
+render_hdr=['render.h']
+headers='''processing.h io.h mesh.h io2.h mesh2.h processing2.h'''.split()
+
+env.IncludeInstall(headers+render_hdr)
+
+dirs='''
+mesh_test
+bloater
+obj2pbrt
+dec
+'''.split()
+env.SConscript(dirs=dirs)

@@ -1,0 +1,4 @@
+Import('env')
+headers = Glob("*.h") + Glob("*.hpp")
+env.IncludeInstall(headers)
+SConscript('test/SConscript')

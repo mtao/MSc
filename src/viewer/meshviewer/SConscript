@@ -1,0 +1,7 @@
+Import('env')
+core='''meshviewer.cpp window.cpp'''.split()
+headers=Glob("*.h")
+
+qrccc = env.Qrc4('meshviewer')
+viewer = env.ViewerInstall('meshviewer',core+qrccc,headers, LIBS=['GL','GLU','GLEW','QtGui','QtCore','QtOpenGL','viewer'])
+env.Depends(viewer, Glob('*.glsl'))

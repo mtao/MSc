@@ -1,0 +1,7 @@
+Import('env')
+core='''gridviewer.cpp window.cpp'''.split()
+headers=Glob("*.h")
+
+qrccc = env.Qrc4('gridviewer')
+viewer = env.ViewerInstall('gridviewer',core+qrccc,headers,LIBS=['GL','GLU','QtGui','QtCore','QtOpenGL','viewer','meshviewer', 'GLEW'])
+env.Depends(viewer, Glob('*.glsl'))

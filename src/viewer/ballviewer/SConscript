@@ -1,0 +1,5 @@
+Import('env')
+core='''ballviewer.cpp'''.split()
+headers=Glob("*.h")
+
+env.ViewerInstall('ballviewer',core,headers, LIBS=['GL','GLU','QtGui','QtCore','QtOpenGL','viewer'])

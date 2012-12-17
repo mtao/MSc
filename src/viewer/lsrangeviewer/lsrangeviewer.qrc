@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="lsrange/">
+        <file>mc.v.glsl</file>
+        <file>mc.f.glsl</file>
+        <file>mc.g.glsl</file>
+    </qresource>
+</RCC>

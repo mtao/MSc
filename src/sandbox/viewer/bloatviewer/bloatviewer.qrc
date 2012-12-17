@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="bloat/">
+        <file>shader.v.glsl</file>
+        <file>shader.f.glsl</file>
+        <file>wireframe.v.glsl</file>
+        <file>wireframe.f.glsl</file>
+        <file>wireframe.g.glsl</file>
+    </qresource>
+</RCC>

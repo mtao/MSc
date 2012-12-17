@@ -1,0 +1,7 @@
+Import('env')
+core='''lsrangeviewer.cpp window.cpp'''.split()
+headers=Glob("*.h")
+
+qrccc = env.Qrc4('lsrangeviewer')
+viewer = env.ViewerInstall('lsrangeviewer',core+qrccc,headers,LIBS=['GL','GLU','QtGui','QtCore','QtOpenGL','viewer','meshviewer','GLEW'])
+env.Depends(viewer, Glob('*.glsl'))

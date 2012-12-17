@@ -1,0 +1,11 @@
+Import('env')
+dirs='''
+textureviewer
+'''.split()
+todo='''
+bloatviewer
+lineviewer
+'''.split()
+
+
+SConscript(dirs=dirs)

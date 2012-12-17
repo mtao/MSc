@@ -1,0 +1,8 @@
+Import('env')
+dirs='''
+2d
+3d
+'''.split()
+
+
+SConscript(dirs=dirs)

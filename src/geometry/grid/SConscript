@@ -1,0 +1,6 @@
+Import('env')
+headers=Glob("*.h")
+env.IncludeInstall(headers=headers)
+
+dirs='''init_test io_test mac'''.split()
+SConscript(dirs=dirs)

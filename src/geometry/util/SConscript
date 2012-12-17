@@ -1,0 +1,3 @@
+Import('env')
+headers=Glob('*.h')
+env.IncludeInstall(headers, 'utils')

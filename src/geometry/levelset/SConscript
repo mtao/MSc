@@ -1,0 +1,14 @@
+Import('env')
+headers=''' levelset.h utils.h '''.split()
+
+env.IncludeInstall(headers)
+
+dirs='''
+mac
+cone_test
+sphere_test
+circle_test
+vertex_test
+'''.split()
+
+SConscript(dirs=dirs)

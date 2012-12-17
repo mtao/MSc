@@ -1,0 +1,9 @@
+Import('env')
+headers = Glob("*.h")
+qrccc=env.Qrc4("resource")
+viewerlib=env.SharedLibrary('viewer',Glob('*.cpp')+qrccc, LIBS=['QtGui','QtCore','QtOpenGL','GLEW'], LIBPATH='/home/mtao/.local/lib')
+env.IncludeInstall(headers)
+env.Install(env['LIB_DIR'], viewerlib)
+
+dirs=['cube_test', 'triangle_test']
+#SConscript(dirs=dirs)

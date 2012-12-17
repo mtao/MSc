@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/bb">
+        <file>bb.v.glsl</file>
+        <file>bb.f.glsl</file>
+        <file>bb2.v.glsl</file>
+        <file>bb2.f.glsl</file>
+        <file>bb.130.v.glsl</file>
+        <file>bb.130.f.glsl</file>
+        <file>bb2.130.f.glsl</file>
+        <file>bb2.130.v.glsl</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,11 @@
+Import('env')
+headers=Glob("*.h")
+env.IncludeInstall(headers)
+
+dirs='''
+init_test
+compile_test
+levelset_test
+vertex_test
+'''.split()
+SConscript(dirs=dirs)

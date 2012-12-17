@@ -1,0 +1,3 @@
+Import("env")
+
+env.Program('gauss_seidel_test','main.cpp')

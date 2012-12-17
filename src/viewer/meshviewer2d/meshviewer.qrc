@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="mesh2d/">
+        <file>shader.v.glsl</file>
+        <file>shader.f.glsl</file>
+    </qresource>
+</RCC>

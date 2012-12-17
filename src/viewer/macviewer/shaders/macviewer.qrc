@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/mac">
+        <file>particle.f.glsl</file>
+        <file>particle.v.glsl</file>
+        <file>particle.g.glsl</file>
+        <file>particle.130.v.glsl</file>
+        <file>particle.130.f.glsl</file>
+        <file>velocity.g.glsl</file>
+        <file>velocity.f.glsl</file>
+        <file>velocity.v.glsl</file>
+        <file>quad.v.glsl</file>
+        <file>quad.g.glsl</file>
+        <file>thickness.f.glsl</file>
+        <file>smooth.f.glsl</file>
+        <file>curvatureflow.f.glsl</file>
+    </qresource>
+</RCC>

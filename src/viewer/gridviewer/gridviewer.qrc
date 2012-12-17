@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/grid">
+        <file>shader.v.glsl</file>
+        <file>shader.f.glsl</file>
+        <file>shader.g.glsl</file>
+        <file>mc.v.glsl</file>
+        <file>mc.f.glsl</file>
+        <file>mc.g.glsl</file>
+        <file>mac.v.glsl</file>
+        <file>mac.f.glsl</file>
+        <file>point.g.glsl</file>
+        <file>ugrid.g.glsl</file>
+        <file>vgrid.g.glsl</file>
+        <file>wgrid.g.glsl</file>
+        <file>dugrid.g.glsl</file>
+        <file>dvgrid.g.glsl</file>
+        <file>dwgrid.g.glsl</file>
+        <file>cell.g.glsl</file>
+    </qresource>
+</RCC>

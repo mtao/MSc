@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="shell/">
+        <file>pointer.v.glsl</file>
+        <file>pointer.f.glsl</file>
+    </qresource>
+</RCC>

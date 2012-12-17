@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="mac/">
+        <file>shader.v.glsl</file>
+        <file>shader.f.glsl</file>
+        <file>shader.g.glsl</file>
+        <file>ms.v.glsl</file>
+        <file>ms.f.glsl</file>
+        <file>ms.g.glsl</file>
+        <file>mac.v.glsl</file>
+        <file>mac.f.glsl</file>
+        <file>point.g.glsl</file>
+        <file>ugrid.g.glsl</file>
+        <file>vgrid.g.glsl</file>
+        <file>cell.g.glsl</file>
+    </qresource>
+</RCC>

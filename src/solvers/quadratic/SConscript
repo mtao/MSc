@@ -1,0 +1,12 @@
+dirs='''
+gauss_seidel
+jacobi
+mprgp
+'''.split()
+Import('env')
+
+headers = Glob("*.h") + Glob("*.hpp")
+env.IncludeInstall(headers)
+
+
+SConscript(dirs=dirs)

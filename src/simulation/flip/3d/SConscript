@@ -1,0 +1,14 @@
+Import('env')
+
+core=''' sim.cpp '''.split()
+headers=''' sim.h particledensitycorrector.hpp'''.split()
+
+stablefluids2 = env.SharedLibrary('flip',core)
+
+env.IncludeInstall(headers)
+env.Install(env['LIB_DIR'],stablefluids2)
+
+SConscript(dirs=['test'])
+
+
+

@@ -1,0 +1,13 @@
+dirs='''
+cholesky
+conjugate_gradient
+gauss_seidel
+jacobi
+'''.split()
+Import('env')
+
+headers = Glob("*.h") + Glob("*.hpp")
+env.IncludeInstall(headers)
+
+
+SConscript(dirs=dirs)

@@ -1,0 +1,7 @@
+Import('env')
+core=Glob("*.cpp")
+headers=Glob("*.h")
+
+qrccc = env.Qrc4('viewershell')
+viewer = env.ViewerInstall('viewershell',core+qrccc,headers,LIBS=['GL','GLU','QtGui','QtCore','QtOpenGL','viewer'])
+env.Depends(viewer, Glob('*.glsl'))

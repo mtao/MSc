@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>shader.v.glsl</file>
+        <file>shader.f.glsl</file>
+        <file>wireframe.v.glsl</file>
+        <file>wireframe.f.glsl</file>
+        <file>wireframe.g.glsl</file>
+        <file>shader.130.f.glsl</file>
+        <file>shader.130.v.glsl</file>
+    </qresource>
+</RCC>

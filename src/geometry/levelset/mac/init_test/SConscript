@@ -1,0 +1,4 @@
+Import('env')
+import os
+test =env.Program('initTest','init_test.cpp', LIBPATH='/home/mtao/.local/lib')
+AlwaysBuild(test)

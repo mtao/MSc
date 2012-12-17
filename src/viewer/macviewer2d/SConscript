@@ -1,0 +1,18 @@
+Import('env')
+core='''macviewer.cpp simulationselector.cpp window.cpp'''.split()
+headers=Glob("*.h")
+
+qrccc =  env.Qrc4('shaders/macviewer')
+libs = ['GL','GLEW','GLU','QtGui','QtCore','QtOpenGL','viewer', \
+'gridviewer2d'\
+,'stablefluids2',\
+'stablefluids_freesurface2',\
+'flip2',\
+'darcy2',\
+'uic2',\
+'stablefluidsdensity2',\
+'stablefluidsfreesurfaceviscosity2',\
+'granular2',\
+'stablefluidsviscosity2']
+viewer = env.ViewerInstall('macviewer2d',core+qrccc,headers,LIBS=libs)
+env.Depends(viewer, Glob('*.glsl'))

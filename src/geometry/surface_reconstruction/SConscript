@@ -1,0 +1,16 @@
+Import('env')
+headers='''marchingsquares.h marchingcubes.h isomesh.h edgestorage.h edgestorage2.h'''.split()
+
+env.IncludeInstall(headers)
+
+dirs='''
+sphere_test
+circle_test
+cone_test
+file_test
+'''.split()
+SConscript(dirs=dirs)
+
+
+
+

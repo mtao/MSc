@@ -1,0 +1,3 @@
+Import('env')
+
+env.Program('obj_test','obj_test.cpp',LIBS=['QtOpenGL'], CCFLAGS='-g')

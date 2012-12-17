@@ -1,0 +1,6 @@
+#subdirs of this root
+dirs='''
+viewer
+'''.split()
+
+SConscript(dirs=dirs)
